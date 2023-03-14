@@ -1,9 +1,10 @@
+import ProductDetails from "@/component/Product/ProductDetails";
 import { fetchAllProducts, fetchProductById } from "@/services/apis/ServerSide";
 import React from "react";
 
 function ProductDetail(props) {
   console.log("props...", props);
-  return <div>ProductDetail</div>;
+  return <ProductDetails {...props} />;
 }
 
 export default ProductDetail;
